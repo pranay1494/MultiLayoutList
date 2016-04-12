@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/batborder">
+
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:id="@+id/batimg"
+            android:src="@drawable/batman"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Batman"
+            android:id="@+id/batman"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/batimg"
+            android:layout_toEndOf="@+id/batimg"
+            android:layout_marginLeft="47dp"
+            android:layout_marginStart="47dp" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

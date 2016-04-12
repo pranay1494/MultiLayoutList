@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/supermanimg"
+            android:src="@drawable/superman"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Superman"
+            android:id="@+id/supertxt"
+            android:layout_below="@+id/supermanimg"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button"
+            android:layout_below="@+id/supertxt"
+            android:layout_toLeftOf="@+id/supertxt"
+            android:layout_toStartOf="@+id/supertxt" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New CheckBox"
+            android:id="@+id/checkBox"
+            android:layout_alignBottom="@+id/button"
+            android:layout_toRightOf="@+id/supertxt"
+            android:layout_toEndOf="@+id/supertxt" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
